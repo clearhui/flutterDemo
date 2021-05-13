@@ -1,0 +1,8 @@
+include ':app'
+rootProject.name = "flutterDemo"
+
+setBinding(new Binding([gradle:this]))
+
+evaluate(new File(settingsDir,'clearhui_flutter_module/.android/include_flutter.groovy'))
+
+include ':clearhui_flutter_module'
